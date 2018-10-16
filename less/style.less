@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+@blue: #74b9ff;
+@green: #00b894;
+@red: #e17055;
+@grey: #dfe6e9;
+@yellow: #fdcb6e;
+@black: #202020;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-radius;
+	font-family: 'Open Sans', Helvetica, Arual, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav {
+	width: 10vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 90vw;
+	background: lighten(@grey,  0.5s);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: @blue;
+	background-image: url('../img/cliffs.jpg');
+	background-attachment: scroll;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.logo {
+		text-align: center;
+		padding: 8px;
+		font-size: 80px;
+	}
+
+	.links {
+		position: relative;
+		bottom: 80px;
+		padding: 32px;
+		font-size: 20px;
+		text-align: right;
+
+		li {
+			padding: 12px 0;
+			list-style-type: none;
+		}
+	}
+}
+
+.main {
+	width: 90vw;
+	margin-left: 10vw;
+
+	.section {
+		padding: 64px 16px;
+		color: white;
+		display: flex;
+		flex-direction: row;
+
+		.img {
+			width: 50%;
+			text-align: center;
+
+			img {
+				border-radius: 50%;
+				width: 480px;
+				height: 480px;
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		.text {
+			width: 30%;
+			margin: 0 auto;
+			text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+			.title {
+				font-size: 48px;
+			}
+
+			.content {
+				margin: 32px 0;
+				font-size: 24px;
+			}
+
+			.button {
+
+				button {
+					border: none;
+					padding: 16px 32px;
+					font-size: 20px;
+					color: white;
+					box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+					text-transform: uppercase;
+					letter-spacing: 4px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.about {
+		background: @blue;
+		background-image: url('../img/home.jpg');
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		button {
+			background: @blue;
+		}
+	}
+
+	.work {
+		background: @green;
+		background-image: url('../img/work.jpg');
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		button {
+			background: @green;
+		}
+	}
+
+	.skills {
+		background: @red;
+		background-image: url('../img/skill.jpg');
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		button {
+			background: @red;
+		}
+	}
+
+	.footer {
+		padding: 32px 0;
+		background: @yellow;
+		color: @black;
+		text-align: center;
+		font-size: 120px;
+		font-weight: 300;	
+		background-image: url('../img/house.jpg');
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+	
+	}
+}
