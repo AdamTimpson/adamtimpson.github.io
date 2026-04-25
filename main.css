@@ -1,0 +1,16 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 10% auto;
+}
+
+main h1 {
+  font-size: 48px;
+}
+
+main p {
+  font-size: 20px;
+}
